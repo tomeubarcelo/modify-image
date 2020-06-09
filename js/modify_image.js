@@ -10,3 +10,15 @@ esta aumente de tamaño y al volver a pulsar disminuya.
 */
 
 const imgMallorca = document.getElementById('fotoMallorca');
+var tamanyoReal = true; //boolean sobre el tamaño real de la foto
+
+function clickImage() {
+    console.log(tamanyoReal);
+    if (tamanyoReal) { //si el tamaño real es true
+        imgMallorca.style.width = "50%";
+        tamanyoReal = false; //reducimos el tamaño y tamanyoReal pasa a ser false
+    } else { //si es false
+        imgMallorca.style.width = "100%";
+        tamanyoReal = true; //aumentamos el tamaño y tamanyoReal pasa a ser true
+    }
+}
