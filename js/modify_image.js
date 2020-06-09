@@ -10,7 +10,7 @@ esta aumente de tamaño y al volver a pulsar disminuya.
 */
 
 const imgMallorca = document.getElementById('fotoMallorca');
-var tamanyoReal = true; //boolean sobre el tamaño real de la foto
+var tamanyoReal = true; //boolean sobre el tamaño real de la foto, de primeras siempre es true
 
 function clickImage() {
     console.log(tamanyoReal);
